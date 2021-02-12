@@ -27,18 +27,19 @@ body {
 .description-section {
   background: url("images/bg-pattern-desktop.svg") no-repeat;
   background-size: cover;
-  padding: 5% 13%;
-  width: 60%;
+  padding: 5% 11%;
+  width: 56%;
 }
 
 .description-section__content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  width: 95%;
 }
 
 .description-section__content h1 {
-  font-size: calc(1rem + 3.8vw);
+  font-size: calc(1rem + 3.5vw);
   font-weight: 300;
   letter-spacing: 1rem;
   margin-bottom: 1rem;
@@ -51,7 +52,7 @@ body {
 }
 
 .description-section__content p {
-  font-size: calc(0.8rem + 0.3vw);
+  font-size: calc(0.7rem + 0.4vw);
   line-height: 1.8em;
   margin-bottom: 2rem;
 }
@@ -105,7 +106,7 @@ body {
   background-image: url("images/hero-desktop.jpg");
   background-size: cover;
   background-position: top;
-  width: 40%;
+  width: 44%;
 }
 
 /* Error styling */
@@ -179,7 +180,10 @@ body {
 }
 
 /* Avoids subscription form elements collapsing */
-@media screen and (max-width: 68rem) and (min-width: 50rem) {
+@media screen and (max-width: 80rem) and (min-width: 50rem) {
+  .description-section__content {
+    width: 100%;
+  }
   .email-input {
     height: 3rem;
     padding: 1em 1rem;
@@ -232,7 +236,7 @@ body {
   .description-section__content {
     text-align: center;
     position: relative;
-    margin: 15% 10%;
+    padding: 15% 10%;
     top: 0;
     transform: none;
   }
@@ -247,7 +251,7 @@ body {
   }
 
   .description-section__content p {
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.6rem + 1vw);
     max-width: 700px;
     margin: 0.5rem auto 2rem;
   }
