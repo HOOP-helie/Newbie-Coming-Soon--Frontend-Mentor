@@ -9,6 +9,7 @@ body {
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   color: hsl(0, 36%, 70%);
   font-family: "Josefin Sans", sans-serif;
+  position: relative;
 }
 
 .hero-mobile {
@@ -16,31 +17,33 @@ body {
 }
 
 .landing-page {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
 .logo {
-  width: 10vw;
+  width: 30%;
+  min-width: 150px;
 }
 
 .description-section {
   background: url("images/bg-pattern-desktop.svg") no-repeat;
   background-size: cover;
   padding: 5% 11%;
-  width: 56%;
+  width: 58%;
 }
 
 .description-section__content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 95%;
+  width: 88%;
 }
 
 .description-section__content h1 {
   font-size: calc(1rem + 3.5vw);
   font-weight: 300;
+  line-height: 1.1;
   letter-spacing: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -59,14 +62,14 @@ body {
 
 .subscription-form {
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .email-input {
-  border: 1px solid hsl(0, 36%, 70%);
+  border: 1px solid hsl(0, 26%, 83%);
   border-radius: 30px;
+  background: transparent;
   color: hsl(0, 36%, 70%);
-  opacity: 0.4;
   font-size: 1rem;
   font-weight: 500;
   height: 3.4rem;
@@ -75,24 +78,23 @@ body {
 }
 
 .email-input::placeholder {
-  color: hsl(0, 36%, 70%);
+  color: hsl(0, 24%, 75%);
 }
 
 .email-input:focus {
-  opacity: 1;
   outline: none;
   font-weight: 600;
 }
 
 .subscription-form button {
+  cursor: pointer;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border: none;
   border-radius: 40px;
   box-shadow: 0px 12px 20px 3px rgba(206, 151, 151, 0.4);
   height: 3.5rem;
   margin-left: -80px;
-  padding: 0 2.5rem;
-  z-index: 1;
+  padding: 0 2.8rem;
 }
 
 .subscription-form button:hover {
@@ -106,7 +108,7 @@ body {
   background-image: url("images/hero-desktop.jpg");
   background-size: cover;
   background-position: top;
-  width: 44%;
+  width: 42%;
 }
 
 /* Error styling */
@@ -169,8 +171,10 @@ body {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(3px);
-  width: 100%;
-  height: 150%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 2;
 }
 
@@ -218,13 +222,13 @@ body {
   }
 
   .logo {
-    width: 30vw;
+    width: 30%;
     margin: 8% 10%;
   }
 
   .hero-mobile {
     display: block;
-    width: 100vw;
+    width: 100%;
   }
 
   .description-section {
@@ -239,6 +243,7 @@ body {
     padding: 15% 10%;
     top: 0;
     transform: none;
+    width: 100%;
   }
 
   .illustration-section {
@@ -285,7 +290,7 @@ body {
   }
 
   .modal-subscription {
-    width: 70vw;
+    width: 90%;
     padding: 3rem 1rem;
   }
   .modal-subscription h2 {

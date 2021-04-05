@@ -32,9 +32,6 @@ submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
   let alertMessage = document.querySelector(".error-message");
   if (alertMessage) {
-    // document
-    //   .querySelector(".description-section__content")
-    //   .removeChild(alertMessage);
     alertMessage.remove();
     iconError.classList.add("hidden");
     emailInput.classList.remove("error");
@@ -47,7 +44,7 @@ submitBtn.addEventListener("click", function (e) {
     emailInput.value = "";
     emailInput.blur();
   } else {
-    // Invalid Email -> Display Error message
+    // Invalid Email -> Display Error message, SetTimeOut for obvious alert if user's email is wrong again
     setTimeout(function () {
       iconError.classList.remove("hidden");
       emailInput.classList.add("error");
